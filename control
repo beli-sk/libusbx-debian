@@ -1,0 +1,25 @@
+Source: libusbx
+Priority: optional
+Maintainer: Michal Belica <devel@beli.sk>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: http://dreamsourcelab.com/
+Vcs-Git: https://github.com/beli-sk/libusbx-debian.git
+Vcs-Browser: https://github.com/beli-sk/libusbx-debian
+
+Package: libusbx-dev
+Section: libdevel
+Architecture: any
+Depends: libusbx1 (= ${binary:Version}), ${misc:Depends}
+Description: libusbx was a fork of libusb
+ libusbx was a fork of libusb, a library that provides generic access
+ to USB devices. It is needed for DSLogic.
+ Development package.
+
+Package: libusbx1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libusbx was a fork of libusb
+ libusbx was a fork of libusb, a library that provides generic access
+ to USB devices. It is needed for DSLogic.
