@@ -1,7 +1,7 @@
 Source: libusbx
 Priority: optional
 Maintainer: Michal Belica <devel@beli.sk>
-Build-Depends: debhelper (>= 9), autotools-dev
+Build-Depends: debhelper (>= 9), autotools-dev, libudev-dev
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://dreamsourcelab.com/
@@ -19,6 +19,7 @@ Description: libusbx was a fork of libusb
 
 Package: libusbx1
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: libusbx was a fork of libusb
  libusbx was a fork of libusb, a library that provides generic access

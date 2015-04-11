@@ -1,0 +1,7 @@
+*.log
+libusbx-dev/
+libusbx1/
+tmp/
+files
+*.substvars
+*.debhelper
