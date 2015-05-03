@@ -14,7 +14,7 @@ Architecture: any
 Depends: libusbx1 (= ${binary:Version}), ${misc:Depends}
 Description: libusbx was a fork of libusb
  libusbx was a fork of libusb, a library that provides generic access
- to USB devices. It is needed for DSLogic.
+ to USB devices.
  Development package.
 
 Package: libusbx1
@@ -23,4 +23,4 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: libusbx was a fork of libusb
  libusbx was a fork of libusb, a library that provides generic access
- to USB devices. It is needed for DSLogic.
+ to USB devices.
